@@ -1,4 +1,3 @@
-
 $(function () {
 
 
@@ -8,6 +7,10 @@ $(function () {
             var percent = $("#service").val();
             var people = $("#people").val();
 
+            if (amount.toString().length > 6) {
+                alert("invalid amount");
+                return;
+            }
             if (amount === "") {
                 alert("Please enter amount");
                 return;
@@ -28,29 +31,9 @@ $(function () {
 
             $("#clear").click(function () {
                 location.reload();
+
             });
-            <span class='st_sharethis_large' displayText='ShareThis'></span>
-                <span class='st_facebook_large' displayText='Facebook'></span>
-                <span class='st__large' displayText=''></span>
-
-
-
-
-
-
-
-            // $(document).ready(function () {
-            //     //called when key is pressed in textbox
-            //     $(".onlynum").keypress(function (e) {
-            //         //if the letter is not digit then display error and don't type anything
-            //         if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-            //             //display error message
-            //             $("#errmsg").html("Digits Only").show().fadeOut("slow");
-            //             return false;
-
         });
     });
 });
-
-
 
