@@ -18,7 +18,7 @@
 
             <form>
                 <label> Bill Amount </br>
-            $ <input type="text" id="amount">  
+            $ <input type="text" class="onlynum" maxlength="6" id="amount"><span id="errmsg"></span>  
             </label>
                 <label> How was the service? </br>
             <select id="service">
@@ -36,7 +36,7 @@
             </form>
         </div>
         <div id=totTip>
-            <sup>$</sup><span id="tip"></span>
+            <span id="tip">$ </span>
             <p id="each">Each</p>
         </div>
     </div>

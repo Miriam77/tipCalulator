@@ -30,3 +30,10 @@ form input[type="text"]{
 #totTip{
     margin-top: 40px;
 }
+#tip{
+    color: brown;
+    font-size: 24;
+}
+#tip{
+    color: black;
+}
