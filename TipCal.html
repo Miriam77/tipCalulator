@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tip Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="tipCal.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Tip Calculator</h1>
+        <div id="calculator">
+
+            <form>
+                <label> Bill Amount </br>
+            $ <input type="text" id="amount">  
+            </label>
+                <label> How was the service? </br>
+            <select id="service">
+                <options disabled selected value="0">-- Choose an Option --</options>
+                <option value=".25">25% Great Service</option>
+                <option value=".20">20% Good Service</option>
+                <option value=".15">15% Pretty Good</option>
+                <option value=".10">10% Bad Service</options>
+               </select>
+                </label>
+                <label> How Many Are Splitting The Bill? </br>
+                    <input type="text" id="people">
+                </label>
+                <button type="button" id="calculate">Calculate</button>
+            </form>
+        </div>
+        <div id=totTip>
+            <sup>$</sup><span id="tip"></span>
+            <p id="each">Each</p>
+        </div>
+    </div>
+    </label>
+    </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="tipCal.js"></script>
+
+</body>
+
+</html>

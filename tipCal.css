@@ -1,0 +1,32 @@
+body{
+    background-image: url("http://media.scoutmagazine.ca/2009/06/3471485986_a1aba2c386_b.jpg");
+    background-size:cover;
+    height:100%;
+    
+}
+#container{
+    width: 400px;
+    margin: 40px auto 0;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: navajowhite;
+    text-align: center;
+
+}
+form{
+    text-align: left;
+}
+form input, form select {
+    padding: 8px;
+    margin: 10px 0px;
+}
+form input[type="text"]{
+    width: 80px;
+}
+#calculate{
+    color: saddlebrown;
+    background-color: sandybrown;
+}
+#totTip{
+    margin-top: 40px;
+}
