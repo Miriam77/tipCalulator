@@ -8,23 +8,30 @@ $(function () {
             var percent = $("#service").val();
             var people = $("#people").val();
 
-            if(amount === "") {
+            if (amount === "") {
                 alert("Please enter amount");
                 return;
             }
             // sets people value to 1, if nothing entered
-            if(people === "" || people <=1) {
+            if (people === "" || people <= 1) {
                 people = 1;
             }
-              var tip = amount * percent / people;
-              tip = Math.round(tip * 100)/100;
-              tip = tip.toFixed(2);
+            var tip = amount * percent / people;
+            tip = Math.round(tip * 100) / 100;
+            tip = tip.toFixed(2);
 
             console.log("amount" + amount);
             console.log("percent" + percent);
             console.log(tip);
 
             $("#tip").append(tip);
+
+            $("#clear").click(function () {
+                location.reload();
+            });
+            <span class='st_sharethis_large' displayText='ShareThis'></span>
+                <span class='st_facebook_large' displayText='Facebook'></span>
+                <span class='st__large' displayText=''></span>
 
 
 
@@ -41,7 +48,7 @@ $(function () {
             //             $("#errmsg").html("Digits Only").show().fadeOut("slow");
             //             return false;
 
-        });             
+        });
     });
 });
 
