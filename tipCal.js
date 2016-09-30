@@ -2,7 +2,8 @@ $(function () {
 
 
     $(function () {
-        $("button#calculate").click(function (ev) {
+        $("#calculate").click(function (ev) {
+
             var amount = $("#amount").val();
             var percent = $("#service").val();
             var people = $("#people").val();
@@ -22,12 +23,10 @@ $(function () {
             var tip = amount * percent / people;
             tip = Math.round(tip * 100) / 100;
             tip = tip.toFixed(2);
-
-            console.log("amount" + amount);
-            console.log("percent" + percent);
-            console.log(tip);
-
+              
             $("#tip").append(tip);
+            // clearing input after calculation
+            $("#amount").val("");
 
             $("#clear").click(function () {
                 location.reload();
